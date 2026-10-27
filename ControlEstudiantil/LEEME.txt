@@ -1,0 +1,27 @@
+CONTROL ESTUDIANTIL - WEB PARA ANDROID
+========================================
+
+Archivos:
+- index.html: estructura de la aplicación.
+- estilos.css: diseño adaptable a pantallas de celulares.
+- app.js: estudiantes de ejemplo, búsqueda, filtro y asistencia temporal.
+
+CARACTERÍSTICAS:
+- Solo HTML, CSS y JavaScript.
+- No usa PHP ni base de datos.
+- No guarda información en localStorage ni en el teléfono.
+- Los nombres incluidos son ficticios.
+- Al recargar o cerrar la página, la asistencia vuelve a los valores iniciales.
+
+PROBAR EN LA COMPUTADORA:
+1. Descomprime el ZIP.
+2. Abre index.html con Chrome, Edge o Firefox.
+
+PROBAR EN ANDROID:
+1. Copia la carpeta a tu teléfono o publica los tres archivos en un sitio web.
+2. Para probar localmente, abre index.html con un navegador que permita abrir archivos locales.
+3. Para usarla como acceso instalable desde Chrome, lo más sencillo es alojarla en un sitio HTTPS y luego añadirla a la pantalla de inicio.
+4. Si deseas un APK, se puede empaquetar esta web con una herramienta como Capacitor, que requiere preparación adicional en una computadora.
+
+NOTA:
+Esta entrega es una página web adaptable, no un APK compilado. No introduzcas datos reales de menores en una demo pública.

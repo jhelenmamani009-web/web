@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123b70">
+  <title>Control Estudiantil</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="marca">CE</div>
+    <div>
+      <p class="sobre-titulo">UNIDAD EDUCATIVA</p>
+      <h1 id="nombreUnidad">EDUAEDO ABAROA B </h1>
+      <p class="subtitulo">Control Estudiantil</p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="bienvenida">
+      <p class="etiqueta">PANEL DEMOSTRATIVO</p>
+      <h2>¡Bienvenido!</h2>
+      <p>Consulta estudiantes y prueba el control de asistencia. Los cambios son temporales y no se guardan.</p>
+    </section>
+
+    <section class="resumen" aria-label="Resumen de ejemplo">
+      <article class="tarjeta-resumen">
+        <span class="icono">👩‍🎓</span>
+        <span class="dato" id="totalEstudiantes">0</span>
+        <span class="descripcion">Estudiantes</span>
+      </article>
+      <article class="tarjeta-resumen">
+        <span class="icono">✅</span>
+        <span class="dato" id="totalPresentes">0</span>
+        <span class="descripcion">Presentes (demo)</span>
+      </article>
+      <article class="tarjeta-resumen">
+        <span class="icono">📚</span>
+        <span class="dato" id="totalCursos">0</span>
+        <span class="descripcion">Cursos</span>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="titulo-seccion">
+        <div>
+          <p class="etiqueta">DIRECTORIO</p>
+          <h2>Estudiantes de ejemplo</h2>
+        </div>
+        <span class="insignia">Datos ficticios</span>
+      </div>
+
+      <label class="campo-busqueda" for="buscar">
+        <span aria-hidden="true">🔎</span>
+        <input id="buscar" type="search" placeholder="Buscar por nombre o curso..." autocomplete="off">
+      </label>
+
+      <label class="etiqueta-filtro" for="filtroCurso">Filtrar por curso</label>
+      <select id="filtroCurso">
+        <option value="todos">Todos los cursos</option>
+      </select>
+
+      <div id="listaEstudiantes" class="lista-estudiantes"></div>
+      <p id="sinResultados" class="sin-resultados" hidden>No hay estudiantes que coincidan con la búsqueda.</p>
+    </section>
+
+    <section class="aviso">
+      <span class="aviso-icono">ℹ️</span>
+      <div>
+        <h3>Modo demostración</h3>
+        <p>La asistencia solo cambia en pantalla. Al recargar o cerrar la página, vuelve a los valores iniciales. No se recopilan ni guardan datos.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Control Estudiantil · Aplicación demostrativa</p>
+    <p>Diseñada para celulares Android</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
